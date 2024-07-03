@@ -1,12 +1,32 @@
 import CardModal from "./modules/cardModal.js"
 
 //?? aprašytas modalas
-document
-   .querySelector('#modal')
-   .addEventListener('click', () => {
-      const modal = new CardModal()
 
-      document.body.append(modal)
+fetch('trees.json')
+   .then(res => res.json())
+   .then(data => {
+      const mainSec = document.querySelector('#mainSec');
 
-      modal.showModal()
+      const oneCard = document.createElement('div')
+      oneCard.classList.add('card')
+
+      data.forEach(element => {
+         console.log(element)
+
+         const cardName = document.createElement('h1')
+         cardName.textContent = element.name
+
+         const cardModalBtn = document.createElement('button')
+         cardModalBtn.textContent = 'More Info'
+
+         cardModalBtn.addEventListener('click', () => {
+            const modal = new CardModal(element)
+            document.body.append(modal)
+            modal.showModal()
+         })
+
+         oneCard.append(cardName, cardModalBtn)
+      })
+
+      mainSec.append(oneCard);
    })
