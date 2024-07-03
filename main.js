@@ -7,11 +7,11 @@ fetch('trees.json')
    .then(data => {
       const mainSec = document.querySelector('#mainSec');
 
-      const oneCard = document.createElement('div')
-      oneCard.classList.add('card')
-
       data.forEach(element => {
          console.log(element)
+
+         const oneCard = document.createElement('div')
+         oneCard.classList.add('card')
 
          const cardName = document.createElement('h1')
          cardName.textContent = element.name
@@ -26,7 +26,7 @@ fetch('trees.json')
          })
 
          oneCard.append(cardName, cardModalBtn)
+         mainSec.append(oneCard);
       })
 
-      mainSec.append(oneCard);
    })
