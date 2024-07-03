@@ -34,18 +34,25 @@ fetch("trees.json")
 
 function enableSound() {
   const audio = document.getElementById("background-audio");
-  audio.play().catch((error) => {
-    console.log("Autoplay was prevented:", error);
-  });
+  audio
+    .play()
+    .then(() => {
+      console.log("Playback started");
+    })
+    .catch((error) => {
+      console.log("Playback prevented:", error);
+    });
   document.getElementById("sound-prompt").style.display = "none";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // BAndoma groti nuo užsikrovimo, bet tas greičiausiai nepaeis
   const audio = document.getElementById("background-audio");
   audio.play().catch((error) => {
     console.log("Autoplay was prevented:", error);
-    // Jei blokiojama, parodo garso grojimo promptą
     document.getElementById("sound-prompt").style.display = "block";
   });
+
+  document
+    .getElementById("enable-sound-btn")
+    .addEventListener("click", enableSound);
 });

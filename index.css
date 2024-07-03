@@ -105,7 +105,7 @@ section#hero {
     bottom: -300px;
     right: -150px;
     transform: rotate(18deg);
-    animation: growGuy 5s forwards;
+    animation: growGuy 6s forwards;
     > img {
       width: 100%;
       height: 100%;
@@ -127,6 +127,20 @@ section#hero {
       object-fit: cover;
     }
   }
+  > div:nth-child(6) {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    animation: throwPineCone 5s forwards;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 @keyframes growGuy {
@@ -135,10 +149,15 @@ section#hero {
     bottom: -200px;
     left: -100px;
   }
-  100% {
+  50% {
     transform: scale(1) rotate(18deg);
     bottom: -50px;
     left: 0px;
+  }
+  100% {
+    transform: scale(1) rotate(18deg);
+    bottom: -200px;
+    left: -100px;
   }
 }
 
@@ -153,6 +172,28 @@ section#hero {
     top: 30px;
     right: 0;
   }
+}
+
+@keyframes throwPineCone {
+  0% {
+    transform: rotate(20deg);
+    top: -100px;
+    right: -100px;
+  }
+  50% {
+    transform: rotate(400deg);
+    top: 100px;
+    right: 200px;
+  }
+  100% {
+    transform: rotate(800deg);
+    top: 500px;
+    right: 600px;
+  }
+}
+
+#sound-prompt {
+  z-index: 200;
 }
 
 dialog {
