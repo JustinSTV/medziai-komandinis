@@ -1,5 +1,45 @@
 @import url("normalize.css");
 
+<<<<<<< HEAD
+=======
+header {
+  display: flex;
+  padding: 0 10%;
+  height: 80px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
+
+  > #logo > a > img {
+    height: 100%;
+  }
+
+  > #menu {
+    display: flex;
+    align-items: center;
+    a {
+      color: #000;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    a:hover {
+      background-color: #735642;
+      color: #ffffff;
+    }
+
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      list-style: none;
+      > li {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+>>>>>>> 6a176054afcf91aa846fd746c247d993eef025a0
 section#hero {
   height: calc(100vh - 80px);
   padding-left: 10%;
@@ -61,6 +101,27 @@ section#hero {
     top: 0;
     left: 0;
     z-index: 50;
+  }
+}
+
+dialog {
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+
+    > img {
+      height: 350px;
+    }
+
+    > .infoField {
+      > p {
+        text-align: justify;
+      }
+    }
   }
 }
 
