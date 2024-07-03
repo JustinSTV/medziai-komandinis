@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 @import url("normalize.css");
-
-header {
-  height: 80px;
-}
 
 section#hero {
   height: calc(100vh - 80px);
@@ -79,8 +74,6 @@ section#hero {
     }
   }
 }
-=======
-@import url('normalize.css');
 
 header {
   display: flex;
@@ -89,30 +82,30 @@ header {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  > #logo > a > img{
+  > #logo > a > img {
     height: 100%;
   }
 
-  > #menu{
+  > #menu {
     display: flex;
     align-items: center;
-    a{
+    a {
       color: #000;
       text-decoration: none;
       padding: 10px;
       border-radius: 10px;
     }
-    a:hover{
+    a:hover {
       background-color: #735642;
       color: #ffffff;
     }
 
-    >ul{
+    > ul {
       display: flex;
       flex-wrap: wrap;
 
       list-style: none;
-      >li{
+      > li {
         padding: 0 10px;
       }
     }
@@ -120,23 +113,22 @@ header {
 }
 
 dialog {
-   width: 30%;
-   border-radius: 10px;
-   border: none;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
 
-   >div {
-      display: flex;
-      flex-direction: column;
+  > div {
+    display: flex;
+    flex-direction: column;
 
-      >img {
-         height: 350px;
+    > img {
+      height: 350px;
+    }
+
+    > .infoField {
+      > p {
+        text-align: justify;
       }
-
-      >.infoField {
-         >p {
-            text-align: justify;
-         }
-      }
-   }
+    }
+  }
 }
->>>>>>> main
