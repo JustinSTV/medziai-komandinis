@@ -8,8 +8,11 @@ section#hero {
   padding-right: 10%;
   position: relative;
   top: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   > h1 {
     z-index: 100;
     color: #fff;
@@ -17,6 +20,24 @@ section#hero {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.9px;
+  }
+  > button {
+    background-color: #1ac511;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 75;
+    font-size: 0.6rem;
+    &:hover {
+      background-color: #24f219;
+      text-decoration: underline;
+      color: #fff;
+    }
+    > a {
+      text-decoration: none;
+      color: #fff;
+    }
   }
   > div {
     position: absolute;
@@ -36,7 +57,7 @@ section#hero {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(126, 106, 38, 0.419);
+    background-color: #7e6a266b;
 
     position: absolute;
     top: 0;
@@ -49,6 +70,9 @@ section#hero {
   section#hero {
     > h1 {
       font-size: 1.5rem;
+    }
+    > button {
+      font-size: 1rem;
     }
   }
 }
