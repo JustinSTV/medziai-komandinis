@@ -49,7 +49,7 @@ section#hero {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   > h1 {
     z-index: 100;
     color: #fff;
@@ -58,18 +58,15 @@ section#hero {
     line-height: 1.5;
     letter-spacing: 0.9px;
   }
-  > a {
-    background-color: #1ac511;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+  > div#playStory {
+    position: relative;
+    width: 120px;
+    height: 160px;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
     z-index: 75;
-    font-size: 0.6rem;
-    text-decoration: none;
-    color: #fff;
     &:hover {
-      background-color: #24f219;
+      transform: scale(1.3);
     }
   }
   > div {

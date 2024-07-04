@@ -32,7 +32,7 @@ fetch("trees.json")
 
 // garso grojimas
 
-function enableSound() {
+document.querySelector("#playStory").addEventListener("click", function () {
   const audio = document.getElementById("background-audio");
   audio
     .play()
@@ -42,17 +42,4 @@ function enableSound() {
     .catch((error) => {
       console.log("Playback prevented:", error);
     });
-  document.getElementById("sound-prompt").style.display = "none";
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const audio = document.getElementById("background-audio");
-  audio.play().catch((error) => {
-    console.log("Autoplay was prevented:", error);
-    document.getElementById("sound-prompt").style.display = "block";
-  });
-
-  document
-    .getElementById("enable-sound-btn")
-    .addEventListener("click", enableSound);
 });
