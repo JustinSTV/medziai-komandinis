@@ -8,9 +8,75 @@ body {
   font-style: normal;
 }
 
+/* header start  ------------------------------------ */
 header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
   height: 80px;
-}
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
+
+  > #logo > a > img {
+    height: 100%;
+  }
+
+  > #menu {
+    display: flex;
+    align-items: center;
+    a {
+      background-color: darkolivegreen;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    a:hover {
+      background-color: #735642;
+      color: #ffffff;
+    }
+
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      list-style: none;
+      > li {
+        padding: 0 10px;
+      }
+    }
+  }
+} /* header end ---------- */
+
+/* footer start ------------------------------- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  > div {
+    text-align: center;
+
+    > a > img {
+      width: 100px;
+    }
+
+    > ul {
+      padding: 0;
+
+      > li {
+        list-style: none;
+        margin-top: 16px;
+
+        > a {
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+} /* footer end ---------- */
 
 section#treeCards {
   height: calc(100vh - 80px);

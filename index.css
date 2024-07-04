@@ -4,6 +4,7 @@
 
 header {
   display: flex;
+  justify-content: space-between;
   padding: 0 10%;
   height: 80px;
   background-color: antiquewhite;
@@ -17,7 +18,8 @@ header {
     display: flex;
     align-items: center;
     a {
-      color: #000;
+      background-color: darkolivegreen;
+      color: #fff;
       text-decoration: none;
       padding: 10px;
       border-radius: 10px;
@@ -222,7 +224,6 @@ dialog {
 footer {
   display: flex;
   justify-content: space-around;
-  width: 50Į;
   margin: 0 auto;
   padding-top: 20px;
 
