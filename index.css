@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+/* header ------------------------------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -10,13 +11,14 @@ header {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  > #logo > a > img {
+  >#logo>a>img {
     height: 100%;
   }
 
-  > #menu {
+  >#menu {
     display: flex;
     align-items: center;
+
     a {
       background-color: darkolivegreen;
       color: #fff;
@@ -24,22 +26,29 @@ header {
       padding: 10px;
       border-radius: 10px;
     }
+
     a:hover {
       background-color: #735642;
       color: #ffffff;
     }
 
-    > ul {
+    >ul {
       display: flex;
       flex-wrap: wrap;
 
       list-style: none;
-      > li {
+
+      >li {
         padding: 0 10px;
+        > .activePage{
+          background-color: #735642;
+        }
       }
     }
   }
 }
+
+/* header end ----------------------------------------- */
 
 section#hero {
   height: calc(100vh - 80px);
@@ -52,7 +61,8 @@ section#hero {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  > h1 {
+
+  >h1 {
     z-index: 100;
     color: #fff;
     max-width: 400px;
@@ -60,28 +70,33 @@ section#hero {
     line-height: 1.5;
     letter-spacing: 0.9px;
   }
-  > div#playStory {
+
+  >div#playStory {
     position: relative;
     width: 100px;
     height: 140px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     z-index: 75;
+
     &:hover {
       transform: scale(1.3);
     }
-    > img {
+
+    >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  > div {
+
+  >div {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    > img {
+
+    >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -90,6 +105,7 @@ section#hero {
       left: 0;
     }
   }
+
   &::before {
     content: "";
     width: 100%;
@@ -101,7 +117,8 @@ section#hero {
     left: 0;
     z-index: 50;
   }
-  > div:nth-child(4) {
+
+  >div:nth-child(4) {
     height: 300px;
     width: 150px;
     position: fixed;
@@ -110,13 +127,15 @@ section#hero {
     right: -150px;
     transform: rotate(18deg);
     animation: growGuy 6s forwards;
-    > img {
+
+    >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  > div:nth-child(5) {
+
+  >div:nth-child(5) {
     height: 200px;
     width: 100px;
     position: fixed;
@@ -125,13 +144,15 @@ section#hero {
     right: 0;
     transform: rotate(-3deg);
     animation: growSquirel 5s forwards;
-    > img {
+
+    >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  > div:nth-child(6) {
+
+  >div:nth-child(6) {
     height: 100px;
     width: 100px;
     position: fixed;
@@ -139,7 +160,8 @@ section#hero {
     top: 0;
     right: 0;
     animation: throwPineCone 5s forwards;
-    > img {
+
+    >img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -153,11 +175,13 @@ section#hero {
     bottom: -200px;
     left: -100px;
   }
+
   50% {
     transform: scale(1) rotate(18deg);
     bottom: -50px;
     left: 0px;
   }
+
   100% {
     transform: scale(1) rotate(18deg);
     bottom: -200px;
@@ -171,6 +195,7 @@ section#hero {
     top: -100px;
     right: -100px;
   }
+
   100% {
     transform: scale(1) rotate(-3deg);
     top: 30px;
@@ -184,11 +209,13 @@ section#hero {
     top: -100px;
     right: -100px;
   }
+
   50% {
     transform: rotate(400deg);
     top: 100px;
     right: 200px;
   }
+
   100% {
     transform: rotate(800deg);
     top: 500px;
@@ -205,51 +232,81 @@ dialog {
   border-radius: 10px;
   border: none;
 
-  > div {
+  >div {
     display: flex;
     flex-direction: column;
 
-    > img {
+    >img {
       height: 350px;
     }
 
-    > .infoField {
-      > p {
+    >.infoField {
+      >p {
         text-align: justify;
       }
     }
   }
 }
 
+/* footer ----------------------- */
 footer {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 20px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
 
-  > div {
+  >div {
     text-align: center;
-    > a > img {
+
+
+    >a>img {
       width: 100px;
     }
 
-    > ul {
+    >ul {
       padding: 0;
 
-      > li {
+      >li {
         list-style: none;
         margin-top: 16px;
+
+        >a {
+          text-decoration: none;
+          color: black;
+        }
       }
+    }
+
+    >h3 {
+      text-decoration: underline;
+    }
+  }
+
+  .social {
+    >a {
+      background-color: darkolivegreen;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    >a:hover {
+      background-color: #735642;
     }
   }
 }
 
+/* footer end ----------------------------------- */
+
 @media only screen and (min-width: 481px) {
   section#hero {
-    > h1 {
+    >h1 {
       font-size: 1.5rem;
     }
-    > button {
+
+    >button {
       font-size: 1rem;
     }
   }
