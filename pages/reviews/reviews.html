@@ -5,11 +5,25 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="./reviews.css" />
+      <script type="module" src="../../main.js"></script>
    </head>
    <body>
       <header></header>
       <main>
-         <section></section>
+         <section>
+            <form>
+               <div>
+                  <label for="usernameField">Vardas:</label>
+                  <input type="text" name="usernameField" id="usernameField" />
+               </div>
+               <div>
+                  <label for="reviewField">Atsiliepimas:</label>
+                  <input type="textarea" name="reviewField" id="reviewField" />
+               </div>
+               <input type="submit" value="Siųsti" />
+            </form>
+            <div id="reviewsContainer"></div>
+         </section>
       </main>
       <footer></footer>
    </body>
