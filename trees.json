@@ -1,84 +1,101 @@
 [
   {
-
     "name": "Sekvoja",
     "species": "kiparisinių šeimos medis",
     "spread": "paplitęs JAV vakaruose",
-    "age_years":2200,
-    "height_meters":126,
-    "diameter_cm":500,
+    "age_years": 2200,
+    "height_meters": 126,
+    "diameter_cm": 500,
     "features": "dar vadinamas Mamutmedžiu",
-    "image": "https://lt.wikipedia.org/wiki/Vis%C5%BEal%C4%97_sekvoja#/media/Vaizdas:US_199_Redwood_Highway.jpg"
+    "local_LT": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/C%C3%A8dre_du_Liban_Barouk_2005.jpg/800px-C%C3%A8dre_du_Liban_Barouk_2005.jpg"
   },
   {
     "name": "Kedras",
     "species": "pušinių šeimos medis",
-    "spread":"paplitęs JAfrikos šiaurės vakaruose ir Azijoje",
-    "age_years":1000,
-    "height_meters":50,
-    "diameter_cm":250,
-    "features":"mitologijoje šventas medis, dievų buveinė",
-    "image": "https://lt.wikipedia.org/wiki/Libano_kedras#/media/Vaizdas:C%C3%A8dre_du_Liban_Barouk_2005.jpg"
+    "spread": "paplitęs JAfrikos šiaurės vakaruose ir Azijoje",
+    "age_years": 1000,
+    "height_meters": 50,
+    "diameter_cm": 250,
+    "features": "mitologijoje šventas medis, dievų buveinė",
+    "local_LT": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/C%C3%A8dre_du_Liban_Barouk_2005.jpg/800px-C%C3%A8dre_du_Liban_Barouk_2005.jpg"
   },
   {
     "name": "Baobabas",
     "species": "bombakmedinių šeimos medis",
-    "spread":"paplitęs Australijos šiaurės vakaruose, Afrikos savanoje",
-    "age_years":2000,
-    "height_meters":17,
-    "diameter_cm":1000,
-    "features":"Anot legendos, baobabas yra pirmasis medis, atsiradęs Žemėje",
-    "image": "https://lt.wikipedia.org/wiki/Tikrasis_baobabas#/media/Vaizdas:Baobab_Adansonia_digitata.jpg"
+    "spread": "paplitęs Australijos šiaurės vakaruose, Afrikos savanoje",
+    "age_years": 2000,
+    "height_meters": 17,
+    "diameter_cm": 1000,
+    "features": "Anot legendos, baobabas yra pirmasis medis, atsiradęs Žemėje",
+    "local_LT": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Baobab_Adansonia_digitata.jpg/800px-Baobab_Adansonia_digitata.jpg"
   },
   {
     "name": "Kaučiukmedis",
     "species": "karpžolinių šeimos medis",
-    "spread":"paplitęs Pietų Amerikos Amazonijos srityje ir Azijoje",
-    "age_years":150,
-    "height_meters":30,
-    "diameter_cm":40,
-    "features":"kaučiukmedžio žievė išskiria baltą skystį, vadinamą lateksu. Jį apdirbus gaunamas natūralus kaučiukas",
-    "image": "https://lt.wikipedia.org/wiki/Brazilinis_kau%C4%8Diukmedis#/media/Vaizdas:Hevea_brasiliensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-071.jpg"
+    "spread": "paplitęs Pietų Amerikos Amazonijos srityje ir Azijoje",
+    "age_years": 150,
+    "height_meters": 30,
+    "diameter_cm": 40,
+    "features": "kaučiukmedžio žievė išskiria baltą skystį, vadinamą lateksu. Jį apdirbus gaunamas natūralus kaučiukas",
+    "local_LT": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rubber_tree_plantation_Thailand_%E3%82%BF%E3%82%A4%E3%81%AE%E3%82%B4%E3%83%A0%E5%9C%92_DSC05246.jpg/1920px-Rubber_tree_plantation_Thailand_%E3%82%BF%E3%82%A4%E3%81%AE%E3%82%B4%E3%83%A0%E5%9C%92_DSC05246.jpg"
   },
   {
     "name": "Raudonmedis",
     "species": "anakardinių šeimos medis",
-    "spread":"paplitęs Pietų Amerikoje",
-    "age_years":350,
-    "height_meters":50,
-    "diameter_cm":20,
-    "features":"Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
-    "image": "https://lt.wikipedia.org/wiki/Tikrasis_raudonmedis#/media/Vaizdas:Schinopsis_lorentzii.jpg"
+    "spread": "paplitęs Pietų Amerikoje",
+    "age_years": 350,
+    "height_meters": 50,
+    "diameter_cm": 2,
+    "features": "Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
+    "local_LT": false,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Schinopsis_lorentzii.jpg"
   },
   {
     "name": "Liepa",
     "species": "dedešvinių šeimos medis",
-    "spread":"paplitęs Europoje, Azijoje, JAV",
-    "age_years":350,
-    "height_meters":50,
-    "diameter_cm":20,
-    "features":"netoli Sartų ežero auga apie 2 m kamieno skersmens ir 34,5 m aukščio mažalapė liepa. Tai sakralinis lietuvių medis",
-    "image":"https://lt.wikipedia.org/wiki/Ma%C5%BEalap%C4%97_liepa#/media/Vaizdas:TiliaCordata001.JPG"
-  },
-  { 
-    "name": "Kaštonas",
-    "species": "sapindinių šeimos medis",
-    "spread":"savaime paplitęs Žemės šiauriniame pusrutulyje",
-    "age_years":300,
-    "height_meters":25,
-    "diameter_cm":20,
-    "features":"pasižymi ypatingai gražiais žiedais",
-    "image":"https://lt.wikipedia.org/wiki/Paprastasis_ka%C5%A1tonas#/media/Vaizdas:Horse-chestnut_800.jpg"
+    "spread": "paplitęs Europoje, Azijoje, JAV",
+    "age_years": 350,
+    "height_meters": 50,
+    "diameter_cm": 20,
+    "features": "Tai lietuvių tautosakoje svarbus medis. Liepa yra moteriškumo simbolis, gimus šeimoje mergaitei, prie sodybos pasodinama liepaitė",
+    "local_LT": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bombus_terrestris_queen_-_Tilia_cordata_-_Keila.jpg/1920px-Bombus_terrestris_queen_-_Tilia_cordata_-_Keila.jpg"
   },
   {
-    "name": "Ąžuolas",
-    "species": "bukinių šeimos medis",
-    "spread":"savaime paplitęs Žemės šiauriniame pusrutulyje",
-    "age_years":1500,
-    "height_meters":35,
-    "diameter_cm":300,
-    "features":"tai tvirčiausias Lietuvos medis, taip pat bene sakrališkiausias",
-    "image":"https://lt.wikipedia.org/wiki/Paprastasis_%C4%85%C5%BEuolas#/media/Vaizdas:Paprastasis_azuolas.JPG"
+    "name": "Karpotasis Beržas",
+    "species": "beržinių šeimos medis",
+    "spread": "paplitęs Europoje, Azijoje",
+    "age_years": 150,
+    "height_meters": 30,
+    "diameter_cm": 40,
+    "features": "Gydymui vartojami karpotojo beržo pumpurai, lapai, žievė ir sula, kurie turi daug gydomųjų savybių nuo eilės ligų.",
+    "local_LT": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Betula_pendula_001.jpg/800px-Betula_pendula_001.jpg"
+  },
+  {
+    "name": "Klevas",
+    "species": "sapindinių šeimos medis",
+    "spread": "paplitęs Europoje, Azijoje, Šiaurės Amerikoj",
+    "age_years": 200,
+    "height_meters": 30,
+    "diameter_cm": 40,
+    "features": "Pasak kai kurių tautų padavimų, klevas yra veiksminga priemonė ginantis nuo raganų.jo šakomis puošia namų ir tvartų duris, ypač per Jonines. Šis ritualas taip pat turėjo apsaugoti nuo žaibo.",
+    "local_LT": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Acer_saccharum.jpg/800px-Acer_saccharum.jpg"
+  },
+  {
+    "name": "Drebulė",
+    "species": "gluosninių šeimos medis",
+    "spread": "paplitęs Europoje, Azijoje",
+    "age_years": 90,
+    "height_meters": 25,
+    "diameter_cm": 100,
+    "features": "Baltų genčių mitologijoje drebulė vaizduojama kaip „išdavikų medis“. Būtent Drebulė, Eglės dukra, išdavė savo tėvo žmogaus-žalčio vardą giminės vyrams, kurie jį užkapojo dalgiais.",
+    "local_LT": true,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Populus_tremula_004.jpg/800px-Populus_tremula_004.jpg"
   }
-
-  ]
+]
