@@ -5,44 +5,66 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <link rel="stylesheet" href="./reviews.css" />
+      <script type="module" src="./reviews.js"></script>
    </head>
    <body>
       <header>
          <div id="logo">
             <a href=""><img src="/media/tree.png" alt="Tree Logo" /></a>
-          </div>
-          <div id="menu">
+         </div>
+         <div id="menu">
             <ul>
-              <li><a href="#">Namai</a></li>
-              <li><a href="/pages/trees/trees.html">Medžiai</a></li>
-              <li><a href="#">Atsiliepimai</a></li>
+               <li><a href="#">Namai</a></li>
+               <li><a href="/pages/trees/trees.html">Medžiai</a></li>
+               <li><a href="#">Atsiliepimai</a></li>
             </ul>
-          </div>
+         </div>
       </header>
       <main>
-         <section></section>
+         <section>
+            <form>
+               <div>
+                  <label for="usernameField">Vardas:</label>
+                  <input type="text" name="usernameField" id="usernameField" />
+               </div>
+               <div>
+                  <label for="reviewField">Atsiliepimas:</label>
+                  <input type="textarea" name="reviewField" id="reviewField" />
+               </div>
+               <input type="submit" value="Siųsti" />
+            </form>
+            <div id="reviewsContainer"></div>
+         </section>
       </main>
       <footer>
          <div>
             <a href=""><img src="/media/tree.png" alt="Tree Logo" /></a>
             <p>Komanda Medžiai</p>
             <p>Esam medžiai, liksim medžiai</p>
-          </div>
-          <div>
+         </div>
+         <div>
             <h3>Navigacija</h3>
             <ul>
-              <li><a href="/index.html">Namai</a></li>
-              <li><a href="/pages/trees/trees.html">Medžiai</a></li>
-              <li><a href="#">Atsiliepimai</a></li>
+               <li><a href="/index.html">Namai</a></li>
+               <li><a href="/pages/trees/trees.html">Medžiai</a></li>
+               <li><a href="#">Atsiliepimai</a></li>
             </ul>
-          </div>
-          <div class="social">
+         </div>
+         <div class="social">
             <h3>Socialiniai tinklai</h3>
-            <a href="https://x.com/?lang=en" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
-          </div>
+            <a href="https://x.com/?lang=en" target="_blank"
+               ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="https://www.instagram.com" target="_blank"
+               ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com" target="_blank"
+               ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com" target="_blank"
+               ><i class="bi bi-youtube"></i
+            ></a>
+         </div>
       </footer>
    </body>
 </html>
