@@ -17,24 +17,36 @@ fetch("/trees.json")
     allTrees = data;
     renderTreeCards(allTrees);
 
-    document
-      .querySelector("section#filter > ul > li:nth-of-type(1)")
-      .addEventListener("click", () => {
-        const filteredTrees = allTrees.filter((tree) => tree.local_LT);
-        renderTreeCards(filteredTrees);
-      });
+    const trees_LTU = document.querySelector(
+      "section#filter > ul > li:nth-of-type(1)"
+    );
+    trees_LTU.addEventListener("click", () => {
+      const filteredTrees = allTrees.filter((tree) => tree.local_LT);
+      renderTreeCards(filteredTrees);
+      trees_LTU.classList.add("active");
+      trees_GLO.classList.remove("active");
+      trees_ALL.classList.remove("active");
+    });
 
-    document
-      .querySelector("section#filter > ul > li:nth-of-type(2)")
-      .addEventListener("click", () => {
-        const filteredTrees = allTrees.filter((tree) => !tree.local_LT);
-        renderTreeCards(filteredTrees);
-      });
+    const trees_GLO = document.querySelector(
+      "section#filter > ul > li:nth-of-type(3)"
+    );
+    trees_GLO.addEventListener("click", () => {
+      const filteredTrees = allTrees.filter((tree) => !tree.local_LT);
+      renderTreeCards(filteredTrees);
+      trees_GLO.classList.add("active");
+      trees_LTU.classList.remove("active");
+      trees_ALL.classList.remove("active");
+    });
 
-    document
-      .querySelector("section#filter > ul > li:nth-of-type(3)")
-      .addEventListener("click", () => {
-        renderTreeCards(allTrees);
-      });
+    const trees_ALL = document.querySelector(
+      "section#filter > ul > li:nth-of-type(5)"
+    );
+    trees_ALL.addEventListener("click", () => {
+      renderTreeCards(allTrees);
+      trees_ALL.classList.add("active");
+      trees_LTU.classList.remove("active");
+      trees_GLO.classList.remove("active");
+    });
   })
   .catch((err) => console.error(err));
