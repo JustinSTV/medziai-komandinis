@@ -45,6 +45,10 @@ header {
 
       > li {
         padding: 0 10px;
+
+        > .activePage{
+          background-color: #735642;
+        }
       }
     }
   }
@@ -71,9 +75,8 @@ section#filter {
   }
 }
 
-/* footer end ----------------------------------- */
-
 section#treeCards {
+  margin-bottom: 30px;
   /* height: calc(100vh - 80px); */
   display: flex;
   flex-wrap: wrap;
@@ -109,32 +112,54 @@ section#treeCards {
   }
 }
 
-/* footer start ------------------------------- */
+/* footer ----------------------- */
 footer {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 20px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
 
-  > div {
+  >div {
     text-align: center;
 
-    > a > img {
+
+    >a>img {
       width: 100px;
     }
 
-    > ul {
+    >ul {
       padding: 0;
 
-      > li {
+      >li {
         list-style: none;
         margin-top: 16px;
 
-        > a {
+        >a {
           text-decoration: none;
-          color: #000;
+          color: black;
         }
       }
     }
+
+    >h3 {
+      text-decoration: underline;
+    }
   }
-} /* footer end ---------- */
+
+  .social {
+    >a {
+      background-color: darkolivegreen;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    >a:hover {
+      background-color: #735642;
+    }
+  }
+}
+
+/* footer end ----------------------------------- */
