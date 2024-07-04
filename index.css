@@ -40,6 +40,9 @@ header {
 
       >li {
         padding: 0 10px;
+        > .activePage{
+          background-color: #735642;
+        }
       }
     }
   }
@@ -252,6 +255,7 @@ footer {
   margin: 0 auto;
   padding-top: 20px;
   background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
 
   >div {
     text-align: center;

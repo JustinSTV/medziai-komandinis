@@ -16,11 +16,11 @@ header {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  >#logo>a>img {
+  > #logo > a > img {
     height: 100%;
   }
 
-  >#menu {
+  > #menu {
     display: flex;
     align-items: center;
 
@@ -37,14 +37,18 @@ header {
       color: #ffffff;
     }
 
-    >ul {
+    > ul {
       display: flex;
       flex-wrap: wrap;
 
       list-style: none;
 
-      >li {
+      > li {
         padding: 0 10px;
+
+        > .activePage{
+          background-color: #735642;
+        }
       }
     }
   }
@@ -52,60 +56,28 @@ header {
 
 /* header end ----------------------------------------- */
 
-
-/* footer ----------------------- */
-footer {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding-top: 20px;
-  background-color: antiquewhite;
-
-  >div {
-    text-align: center;
-
-
-    >a>img {
-      width: 100px;
+section#filter {
+  > ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: green;
+    list-style: none;
+    padding: 10px;
+    > li.active {
+      color: #b54f13;
     }
-
-    >ul {
-      padding: 0;
-
-      >li {
-        list-style: none;
-        margin-top: 16px;
-
-        > a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-    }
-
-    >h3 {
-      text-decoration: underline;
+    > li:nth-child(1),
+    > li:nth-child(3),
+    > li:nth-child(5) {
+      cursor: pointer;
     }
   }
-
-  .social {
-    >a {
-      background-color: darkolivegreen;
-      color: #fff;
-      padding: 10px;
-      border-radius: 10px;
-    }
-
-    >a:hover {
-      background-color: #735642;
-    }
-  }
-} 
-
-/* footer end ----------------------------------- */
+}
 
 section#treeCards {
-  height: calc(100vh - 80px);
+  margin-bottom: 30px;
+  /* height: calc(100vh - 80px); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -139,3 +111,55 @@ section#treeCards {
     }
   }
 }
+
+/* footer ----------------------- */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: antiquewhite;
+  box-shadow: 0 0 5px #d3d3d3;
+
+  >div {
+    text-align: center;
+
+
+    >a>img {
+      width: 100px;
+    }
+
+    >ul {
+      padding: 0;
+
+      >li {
+        list-style: none;
+        margin-top: 16px;
+
+        >a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    >h3 {
+      text-decoration: underline;
+    }
+  }
+
+  .social {
+    >a {
+      background-color: darkolivegreen;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    >a:hover {
+      background-color: #735642;
+    }
+  }
+}
+
+/* footer end ----------------------------------- */
