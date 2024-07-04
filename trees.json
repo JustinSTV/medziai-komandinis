@@ -46,7 +46,7 @@
     "spread":"paplitęs Pietų Amerikoje",
     "age_years":350,
     "height_meters":50,
-    "diameter_cm":2,
+    "diameter_cm":20,
     "features":"Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
     "image": "https://lt.wikipedia.org/wiki/Tikrasis_raudonmedis#/media/Vaizdas:Schinopsis_lorentzii.jpg"
   },
@@ -56,9 +56,29 @@
     "spread":"paplitęs Europoje, Azijoje, JAV",
     "age_years":350,
     "height_meters":50,
-    "diameter_cm":2,
-    "features":"Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
-    "image":"https://lt.wikipedia.org/wiki/Libano_kedras#/media/Vaizdas:C%C3%A8dre_du_Liban_Barouk_2005.jpg"
+    "diameter_cm":20,
+    "features":"netoli Sartų ežero auga apie 2 m kamieno skersmens ir 34,5 m aukščio mažalapė liepa. Tai sakralinis lietuvių medis",
+    "image":"https://lt.wikipedia.org/wiki/Ma%C5%BEalap%C4%97_liepa#/media/Vaizdas:TiliaCordata001.JPG"
+  },
+  { 
+    "name": "Kaštonas",
+    "species": "sapindinių šeimos medis",
+    "spread":"savaime paplitęs Žemės šiauriniame pusrutulyje",
+    "age_years":300,
+    "height_meters":25,
+    "diameter_cm":20,
+    "features":"pasižymi ypatingai gražiais žiedais",
+    "image":"https://lt.wikipedia.org/wiki/Paprastasis_ka%C5%A1tonas#/media/Vaizdas:Horse-chestnut_800.jpg"
+  },
+  {
+    "name": "Ąžuolas",
+    "species": "bukinių šeimos medis",
+    "spread":"savaime paplitęs Žemės šiauriniame pusrutulyje",
+    "age_years":1500,
+    "height_meters":35,
+    "diameter_cm":300,
+    "features":"tai tvirčiausias Lietuvos medis, taip pat bene sakrališkiausias",
+    "image":"https://lt.wikipedia.org/wiki/Paprastasis_%C4%85%C5%BEuolas#/media/Vaizdas:Paprastasis_azuolas.JPG"
   }
-   
-]
+
+  ]
