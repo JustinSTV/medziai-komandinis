@@ -8,7 +8,6 @@ body {
   font-style: normal;
 }
 
-/* header start  ------------------------------------ */
 header {
   display: flex;
   justify-content: space-between;
@@ -24,6 +23,7 @@ header {
   > #menu {
     display: flex;
     align-items: center;
+
     a {
       background-color: darkolivegreen;
       color: #fff;
@@ -31,6 +31,7 @@ header {
       padding: 10px;
       border-radius: 10px;
     }
+
     a:hover {
       background-color: #735642;
       color: #ffffff;
@@ -41,12 +42,15 @@ header {
       flex-wrap: wrap;
 
       list-style: none;
+
       > li {
         padding: 0 10px;
       }
     }
   }
-} /* header end ---------- */
+}
+
+/* header end ----------------------------------------- */
 
 section#filter {
   > ul {
@@ -59,6 +63,8 @@ section#filter {
     }
   }
 }
+
+/* footer end ----------------------------------- */
 
 section#treeCards {
   /* height: calc(100vh - 80px); */
