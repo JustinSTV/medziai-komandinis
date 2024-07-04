@@ -21,15 +21,24 @@
          </div>
       </header>
       <main>
-         <section>
+         <section id="reviews">
             <form>
                <div>
                   <label for="usernameField">Vardas:</label>
-                  <input type="text" name="usernameField" id="usernameField" />
+                  <input
+                     type="text"
+                     name="usernameField"
+                     id="usernameField"
+                     required />
                </div>
                <div>
                   <label for="reviewField">Atsiliepimas:</label>
-                  <input type="textarea" name="reviewField" id="reviewField" />
+                  <textarea
+                     name="reviewField"
+                     id="reviewField"
+                     rows="5"
+                     cols="25"
+                     required></textarea>
                </div>
                <input type="submit" value="Siųsti" />
             </form>
