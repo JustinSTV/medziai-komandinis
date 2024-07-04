@@ -55,11 +55,18 @@ header {
 section#filter {
   > ul {
     display: flex;
+    justify-content: center;
     gap: 20px;
     color: green;
-    cursor: pointer;
-    > li:first-of-type {
-      list-style: none;
+    list-style: none;
+    padding: 10px;
+    > li.active {
+      color: #b54f13;
+    }
+    > li:nth-child(1),
+    > li:nth-child(3),
+    > li:nth-child(5) {
+      cursor: pointer;
     }
   }
 }
