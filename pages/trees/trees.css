@@ -8,7 +8,6 @@ body {
   font-style: normal;
 }
 
-/* header start  ------------------------------------ */
 header {
   display: flex;
   justify-content: space-between;
@@ -17,13 +16,14 @@ header {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  > #logo > a > img {
+  >#logo>a>img {
     height: 100%;
   }
 
-  > #menu {
+  >#menu {
     display: flex;
     align-items: center;
+
     a {
       background-color: darkolivegreen;
       color: #fff;
@@ -31,52 +31,78 @@ header {
       padding: 10px;
       border-radius: 10px;
     }
+
     a:hover {
       background-color: #735642;
       color: #ffffff;
     }
 
-    > ul {
+    >ul {
       display: flex;
       flex-wrap: wrap;
 
       list-style: none;
-      > li {
+
+      >li {
         padding: 0 10px;
       }
     }
   }
-} /* header end ---------- */
+}
 
-/* footer start ------------------------------- */
+/* header end ----------------------------------------- */
+
+
+/* footer ----------------------- */
 footer {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   padding-top: 20px;
+  background-color: antiquewhite;
 
-  > div {
+  >div {
     text-align: center;
 
-    > a > img {
+
+    >a>img {
       width: 100px;
     }
 
-    > ul {
+    >ul {
       padding: 0;
 
-      > li {
+      >li {
         list-style: none;
         margin-top: 16px;
 
         > a {
           text-decoration: none;
-          color: #000;
+          color: black;
         }
       }
     }
+
+    >h3 {
+      text-decoration: underline;
+    }
   }
-} /* footer end ---------- */
+
+  .social {
+    >a {
+      background-color: darkolivegreen;
+      color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    >a:hover {
+      background-color: #735642;
+    }
+  }
+} 
+
+/* footer end ----------------------------------- */
 
 section#treeCards {
   height: calc(100vh - 80px);
