@@ -40,7 +40,8 @@ header {
 
       >li {
         padding: 0 10px;
-        > .activePage{
+
+        >.activePage {
           background-color: #735642;
         }
       }

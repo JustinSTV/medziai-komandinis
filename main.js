@@ -1,33 +1,33 @@
-import CardModal from "./modules/cardModal.js";
+import CardModal from "./modules/CardModal.js";
 
 //?? aprašytas modalas
-fetch("trees.json")
-   .then((res) => res.json())
-   .then((data) => {
-      const mainSec = document.querySelector("#mainSec");
+// fetch("trees.json")
+//    .then((res) => res.json())
+//    .then((data) => {
+//       const mainSec = document.querySelector("#mainSec");
 
-      data.forEach((element) => {
-         console.log(element);
+//       data.forEach((element) => {
+//          console.log(element);
 
-         const oneCard = document.createElement("div");
-         oneCard.classList.add("card");
+//          const oneCard = document.createElement("div");
+//          oneCard.classList.add("card");
 
-         const cardName = document.createElement("h1");
-         cardName.textContent = element.name;
+//          const cardName = document.createElement("h1");
+//          cardName.textContent = element.name;
 
-         const cardModalBtn = document.createElement("button");
-         cardModalBtn.textContent = "More Info";
+//          const cardModalBtn = document.createElement("button");
+//          cardModalBtn.textContent = "More Info";
 
-         cardModalBtn.addEventListener("click", () => {
-            const modal = new CardModal(element);
-            document.body.append(modal);
-            modal.showModal();
-         });
+//          cardModalBtn.addEventListener("click", () => {
+//             const modal = new CardModal(element);
+//             document.body.append(modal);
+//             modal.showModal();
+//          });
 
-         oneCard.append(cardName, cardModalBtn);
-         mainSec.append(oneCard);
-      });
-   });
+//          oneCard.append(cardName, cardModalBtn);
+//          mainSec.append(oneCard);
+//       });
+//    });
 
 // garso grojimas
 

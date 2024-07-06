@@ -1,3 +1,5 @@
+import CardModal from "./CardModal.js";
+
 export default class TreeCard {
   constructor(props) {
     this.props = props;
@@ -18,6 +20,12 @@ export default class TreeCard {
 
     const treeCardInfo = document.createElement("i");
     treeCardInfo.classList.add("bi", "bi-info-circle-fill");
+
+    treeCardInfo.addEventListener('click', () => {
+      const cardModal = new CardModal(this.props)
+      document.body.appendChild(cardModal)
+      cardModal.showModal()
+    })
 
     treeCardDiv.append(treeCardImg, treeCardTtl, treeCardFeat, treeCardInfo);
 
