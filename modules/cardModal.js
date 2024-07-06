@@ -45,7 +45,7 @@ export default class CardModal {
 
 
       const closeButton = document.createElement('button');
-      closeButton.textContent = 'Close';
+      closeButton.textContent = 'Uždaryti';
       closeButton.classList.add('closeButton');
       closeButton.addEventListener('click', () => {
          cardModal.close();

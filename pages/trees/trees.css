@@ -123,20 +123,44 @@ dialog {
   box-shadow: 2px 2px 10px #beedbe;
   border-radius: 5px;
   border: none;
+  width: 50%;
 
   >div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* padding: 10px; */
 
     >img {
       height: 350px;
+      /* width: 340px; */
+      object-fit: cover;
+      border-radius: 5px;
     }
 
     >.infoField {
-      >p {
-        text-align: justify;
+      /* padding: 15px; */
+
+      >h2 {
+        text-align: center;
+      }
+
+      >p:nth-child(2) {
+        /* width: 50%; */
+        text-wrap: wrap;
+        text-align: center;
+        font-weight: bold;
       }
     }
+
+  }
+
+  .closeButton {
+    background-color: #b54f13;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+
   }
 }
 
@@ -194,3 +218,21 @@ footer {
 }
 
 /* footer end ----------------------------------- */
+
+
+@media(min-width: 700px) {
+  dialog {
+    >div {
+      flex-direction: row;
+      justify-content: space-around;
+
+      >img {
+        width: 250px;
+      }
+
+      .infoField {
+        width: 50%;
+      }
+    }
+  }
+}
