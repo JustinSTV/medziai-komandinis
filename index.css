@@ -228,26 +228,7 @@ section#hero {
   z-index: 200;
 }
 
-dialog {
-  width: 30%;
-  border-radius: 10px;
-  border: none;
 
-  >div {
-    display: flex;
-    flex-direction: column;
-
-    >img {
-      height: 350px;
-    }
-
-    >.infoField {
-      >p {
-        text-align: justify;
-      }
-    }
-  }
-}
 
 /* footer ----------------------- */
 footer {
