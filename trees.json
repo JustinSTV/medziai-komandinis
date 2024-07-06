@@ -7,7 +7,7 @@
     "height_meters": 126,
     "diameter_cm": 500,
     "features": "dar vadinamas Mamutmedžiu",
-    "image": "https://lt.wikipedia.org/wiki/Vis%C5%BEal%C4%97_sekvoja#/media/Vaizdas:US_199_Redwood_Highway.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/US_199_Redwood_Highway.jpg/1280px-US_199_Redwood_Highway.jpg",
     "local_LT": false
   },
   {
@@ -18,7 +18,7 @@
     "height_meters": 50,
     "diameter_cm": 250,
     "features": "mitologijoje šventas medis, dievų buveinė",
-    "image": "https://lt.wikipedia.org/wiki/Libano_kedras#/media/Vaizdas:C%C3%A8dre_du_Liban_Barouk_2005.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/C%C3%A8dre_du_Liban_Barouk_2005.jpg",
     "local_LT": false
   },
   {
@@ -29,7 +29,7 @@
     "height_meters": 17,
     "diameter_cm": 1000,
     "features": "Anot legendos, baobabas yra pirmasis medis, atsiradęs Žemėje",
-    "image": "https://lt.wikipedia.org/wiki/Tikrasis_baobabas#/media/Vaizdas:Baobab_Adansonia_digitata.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Adansonia_grandidieri_Pat_Hooper.jpg",
     "local_LT": false
   },
   {
@@ -40,7 +40,7 @@
     "height_meters": 30,
     "diameter_cm": 40,
     "features": "kaučiukmedžio žievė išskiria baltą skystį, vadinamą lateksu. Jį apdirbus gaunamas natūralus kaučiukas",
-    "image": "https://lt.wikipedia.org/wiki/Brazilinis_kau%C4%8Diukmedis#/media/Vaizdas:Hevea_brasiliensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-071.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rubber_tree_plantation_Thailand_%E3%82%BF%E3%82%A4%E3%81%AE%E3%82%B4%E3%83%A0%E5%9C%92_DSC05246.jpg/1920px-Rubber_tree_plantation_Thailand_%E3%82%BF%E3%82%A4%E3%81%AE%E3%82%B4%E3%83%A0%E5%9C%92_DSC05246.jpg",
     "local_LT": false
   },
   {
@@ -49,9 +49,9 @@
     "spread": "paplitęs Pietų Amerikoje",
     "age_years": 350,
     "height_meters": 50,
-    "diameter_cm": 20,
+    "diameter_cm": 2,
     "features": "Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
-    "image": "https://lt.wikipedia.org/wiki/Tikrasis_raudonmedis#/media/Vaizdas:Schinopsis_lorentzii.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Schinopsis_lorentzii.jpg",
     "local_LT": false
   },
   {
@@ -60,10 +60,10 @@
     "spread": "paplitęs Europoje, Azijoje, JAV",
     "age_years": 350,
     "height_meters": 50,
-    "diameter_cm": 20,
-    "features": "netoli Sartų ežero auga apie 2 m kamieno skersmens ir 34,5 m aukščio mažalapė liepa. Tai sakralinis lietuvių medis",
-    "image": "https://lt.wikipedia.org/wiki/Ma%C5%BEalap%C4%97_liepa#/media/Vaizdas:TiliaCordata001.JPG",
-    "local_LT": true
+    "diameter_cm": 2,
+    "features": "Tai vertingi medžiai, dažnai naudojami medienos pramonėje dėl savo aukštos kokybės medienos",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Bombus_terrestris_queen_-_Tilia_cordata_-_Keila.jpg/1920px-Bombus_terrestris_queen_-_Tilia_cordata_-_Keila.jpg",
+    "local_LT": false
   },
   {
     "name": "Kaštonas",
@@ -73,7 +73,7 @@
     "height_meters": 25,
     "diameter_cm": 20,
     "features": "pasižymi ypatingai gražiais žiedais",
-    "image": "https://lt.wikipedia.org/wiki/Paprastasis_ka%C5%A1tonas#/media/Vaizdas:Horse-chestnut_800.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Horse-chestnut_800.jpg",
     "local_LT": true
   },
   {
@@ -84,7 +84,7 @@
     "height_meters": 35,
     "diameter_cm": 300,
     "features": "tai tvirčiausias Lietuvos medis, taip pat bene sakrališkiausias",
-    "image": "https://lt.wikipedia.org/wiki/Paprastasis_%C4%85%C5%BEuolas#/media/Vaizdas:Paprastasis_azuolas.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Paprastasis_azuolas.JPG",
     "local_LT": true
   }
 ]
