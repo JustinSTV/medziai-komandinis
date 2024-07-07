@@ -28,7 +28,7 @@ document.querySelector("#playStory").addEventListener("click", function () {
 
   // Start the squirrel's animation when the guy's animation ends
   guyElement.addEventListener("animationend", () => {
-    squirrelElement.style.animation = "growSquirrel 5s forwards";
+    squirrelElement.style.animation = "growSquirrel 2s forwards";
   });
 
   // Start the pineCone animation when the squirrel's animation ends
@@ -36,8 +36,11 @@ document.querySelector("#playStory").addEventListener("click", function () {
     pineConeElement.style.animation = "throwPineCone 2s forwards";
   });
 
-  // Start the guy's crach animation when the pineCone's animation ends
-  pineConeElement.addEventListener("animationend", () => {
-    guyElement.style.animation = "crashGuy 2s forwards";
+  // Start the guy's crash animation at 90% of the pineCone's animation duration
+  pineConeElement.addEventListener("animationstart", () => {
+    setTimeout(() => {
+      guyElement.style.animation = "crashGuy 2s forwards";
+      console.log("Guy's crash animation started");
+    }, 0.7 * 2000); // 70% of 2 seconds (2000ms)
   });
 });
