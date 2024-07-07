@@ -9,13 +9,11 @@ document.querySelector("#playStory").addEventListener("click", function () {
 
   // Forest bird chirping start immediately
   bcgAudioForest.play().then(() => {
-    console.log("Bird chirping sound started");
     // Guy's steps sound starts after a delay
     setTimeout(() => {
       bcgAudioWalking.volume = 1.0; // Set the volume to maximum
       bcgAudioWalking.currentTime = 30; // Start from 30 seconds
       bcgAudioWalking.play().then(() => {
-        console.log("Guy's walking sound started");
         // Stop the walking sound after 5 seconds
         setTimeout(() => {
           bcgAudioWalking.pause();
@@ -30,13 +28,16 @@ document.querySelector("#playStory").addEventListener("click", function () {
 
   // Start the squirrel's animation when the guy's animation ends
   guyElement.addEventListener("animationend", () => {
-    console.log("Guy's animation ended");
     squirrelElement.style.animation = "growSquirrel 5s forwards";
   });
 
   // Start the pineCone animation when the squirrel's animation ends
   squirrelElement.addEventListener("animationend", () => {
-    console.log("Squirrel's animation ended");
-    pineConeElement.style.animation = "throwPineCone 5s forwards";
+    pineConeElement.style.animation = "throwPineCone 2s forwards";
+  });
+
+  // Start the guy's crach animation when the pineCone's animation ends
+  pineConeElement.addEventListener("animationend", () => {
+    guyElement.style.animation = "crashGuy 2s forwards";
   });
 });
