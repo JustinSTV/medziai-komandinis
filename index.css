@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* header ------------------------------------- */
 header {
   display: flex;
@@ -11,11 +17,11 @@ header {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  >#logo>a>img {
+  > #logo > a > img {
     height: 100%;
   }
 
-  >#menu {
+  > #menu {
     display: flex;
     align-items: center;
 
@@ -32,16 +38,16 @@ header {
       color: #ffffff;
     }
 
-    >ul {
+    > ul {
       display: flex;
       flex-wrap: wrap;
 
       list-style: none;
 
-      >li {
+      > li {
         padding: 0 10px;
 
-        >.activePage {
+        > .activePage {
           background-color: #735642;
         }
       }
@@ -63,41 +69,43 @@ section#hero {
   align-items: center;
   gap: 10px;
 
-  >h1 {
+  > h1 {
     z-index: 100;
     color: #fff;
     max-width: 400px;
-    font-size: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
     line-height: 1.5;
-    letter-spacing: 0.9px;
+    letter-spacing: 2px;
+    text-align: center;
   }
 
-  >div#playStory {
+  > div#playStory {
     position: relative;
-    width: 100px;
-    height: 140px;
-    cursor: pointer;
+    width: 200px;
+    height: 200px;
     transition: transform 0.3s, box-shadow 0.3s;
     z-index: 75;
 
     &:hover {
       transform: scale(1.3);
+      cursor: pointer;
     }
 
-    >img {
+    > img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
-  >div {
+  > div {
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
 
-    >img {
+    > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -119,53 +127,50 @@ section#hero {
     z-index: 50;
   }
 
-  >div:nth-child(4) {
+  > div#guy {
+    height: 500px;
+    width: 400px;
+    position: fixed;
+    z-index: 100;
+    bottom: -80px;
+    left: -300px;
+    transform: rotate(18deg);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  > div#squirrel {
     height: 300px;
+    width: 200px;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    right: -200px;
+    transform: rotate(-3deg);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  > div#pineCone {
+    height: 150px;
     width: 150px;
     position: fixed;
     z-index: 100;
-    bottom: -300px;
+    top: 20px;
     right: -150px;
-    transform: rotate(18deg);
-    animation: growGuy 6s forwards;
 
-    >img {
+    > img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  >div:nth-child(5) {
-    height: 200px;
-    width: 100px;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 0;
-    transform: rotate(-3deg);
-    animation: growSquirel 5s forwards;
-
-    >img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  >div:nth-child(6) {
-    height: 100px;
-    width: 100px;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 0;
-    animation: throwPineCone 5s forwards;
-
-    >img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -173,42 +178,56 @@ section#hero {
 @keyframes growGuy {
   0% {
     transform: scale(1) rotate(18deg);
-    bottom: -200px;
-    left: -100px;
-  }
-
-  50% {
-    transform: scale(1) rotate(18deg);
-    bottom: -50px;
-    left: 0px;
+    bottom: -400px;
+    left: -600px;
   }
 
   100% {
     transform: scale(1) rotate(18deg);
-    bottom: -200px;
-    left: -100px;
+    bottom: -100px;
+    left: -20px;
   }
 }
 
-@keyframes growSquirel {
+@keyframes crashGuy {
+  0% {
+    transform: scale(1) rotate(18deg);
+    bottom: -100px;
+    left: -20px;
+  }
+
+  100% {
+    transform: scale(1) rotate(1000deg);
+    bottom: -80px;
+    left: -400px;
+  }
+}
+
+@keyframes growSquirrel {
   0% {
     transform: scale(1) rotate(-3deg);
-    top: -100px;
-    right: -100px;
+    top: 0px;
+    right: -200px;
+  }
+
+  50% {
+    transform: scale(1) rotate(-3deg);
+    top: 0px;
+    right: -20px;
   }
 
   100% {
     transform: scale(1) rotate(-3deg);
-    top: 30px;
-    right: 0;
+    top: 0px;
+    right: -200px;
   }
 }
 
 @keyframes throwPineCone {
   0% {
     transform: rotate(20deg);
-    top: -100px;
-    right: -100px;
+    top: 20px;
+    right: -150px;
   }
 
   50% {
@@ -218,17 +237,11 @@ section#hero {
   }
 
   100% {
-    transform: rotate(800deg);
-    top: 500px;
-    right: 600px;
+    transform: rotate(1030deg);
+    top: 600px;
+    right: 300px;
   }
 }
-
-#sound-prompt {
-  z-index: 200;
-}
-
-
 
 /* footer ----------------------- */
 footer {
@@ -239,42 +252,41 @@ footer {
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
-  >div {
+  > div {
     text-align: center;
 
-
-    >a>img {
+    > a > img {
       width: 100px;
     }
 
-    >ul {
+    > ul {
       padding: 0;
 
-      >li {
+      > li {
         list-style: none;
         margin-top: 16px;
 
-        >a {
+        > a {
           text-decoration: none;
           color: black;
         }
       }
     }
 
-    >h3 {
+    > h3 {
       text-decoration: underline;
     }
   }
 
   .social {
-    >a {
+    > a {
       background-color: darkolivegreen;
       color: #fff;
       padding: 10px;
       border-radius: 10px;
     }
 
-    >a:hover {
+    > a:hover {
       background-color: #735642;
     }
   }
@@ -282,14 +294,15 @@ footer {
 
 /* footer end ----------------------------------- */
 
-@media only screen and (min-width: 481px) {
+@media (min-width: 700px) {
   section#hero {
-    >h1 {
-      font-size: 1.5rem;
+    > h1 {
+      font-size: 2.5rem;
+      max-width: 500px;
     }
-
-    >button {
-      font-size: 1rem;
+    > div#playStory {
+      width: 300px;
+      height: 300px;
     }
   }
 }
