@@ -11,7 +11,7 @@ const renderTreeCards = (trees) => {
   });
 };
 
-fetch("/trees.json")
+fetch("../trees/trees.json")
   .then((res) => res.json())
   .then((data) => {
     allTrees = data;
