@@ -1,6 +1,6 @@
 const fetchAndDisplayReviews = () => {
   //?? Display'inam visus reviews
-  fetch("http://localhost:3000/pages/reviews")
+  fetch("http://localhost:3000/reviews")
     .then((res) => res.json())
     .then((reviews) => {
       const reviewsContainer = document.querySelector("#reviewsContainer");
@@ -32,7 +32,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   };
 
   //?? postinam naujus reviews į json
-  fetch("http://localhost:3000/pages/reviews", {
+  fetch("http://localhost:3000/reviews", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
