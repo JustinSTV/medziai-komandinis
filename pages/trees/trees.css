@@ -8,9 +8,10 @@ body {
   font-style: normal;
 }
 
+/* header ------------------------------------- */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10%;
   height: 80px;
   background-color: antiquewhite;
@@ -38,12 +39,16 @@ header {
     }
 
     >ul {
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
-
+      justify-content: space-between;
+      
       list-style: none;
 
       >li {
+        display: flex;
+        justify-content: space-around;
         padding: 0 10px;
 
         >.activePage {
@@ -55,6 +60,7 @@ header {
 }
 
 /* header end ----------------------------------------- */
+
 
 section#filter {
   >ul {
@@ -79,7 +85,7 @@ section#filter {
 
 section#treeCards {
   margin-bottom: 30px;
-  /* height: calc(100vh - 80px); */
+  /* min-height: calc(100vh - 80px - 310px);  */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -170,15 +176,13 @@ dialog {
 /* footer ----------------------- */
 footer {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: space-evenly;
   padding-top: 20px;
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
 
   >div {
     text-align: center;
-
 
     >a>img {
       width: 100px;
