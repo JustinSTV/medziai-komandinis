@@ -11,7 +11,7 @@ body {
 /* header ------------------------------------- */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 10%;
   height: 80px;
   background-color: antiquewhite;
@@ -38,13 +38,25 @@ header {
       color: #ffffff;
     }
 
+<<<<<<< HEAD
+    >ul {
+      padding: 0;
+=======
     > ul {
+>>>>>>> main
       display: flex;
       flex-wrap: wrap;
-
+      justify-content: space-between;
+      
       list-style: none;
 
+<<<<<<< HEAD
+      >li {
+        display: flex;
+        justify-content: space-around;
+=======
       > li {
+>>>>>>> main
         padding: 0 10px;
 
         > .activePage {
@@ -246,8 +258,7 @@ section#hero {
 /* footer ----------------------- */
 footer {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: space-evenly;
   padding-top: 20px;
   background-color: antiquewhite;
   box-shadow: 0 0 5px #d3d3d3;
@@ -255,7 +266,11 @@ footer {
   > div {
     text-align: center;
 
+<<<<<<< HEAD
+    >a>img {
+=======
     > a > img {
+>>>>>>> main
       width: 100px;
     }
 
