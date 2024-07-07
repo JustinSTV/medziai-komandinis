@@ -149,8 +149,8 @@ section#hero {
     width: 200px;
     position: fixed;
     z-index: 100;
-    top: 0;
-    right: -20px;
+    top: 20px;
+    right: -200px;
     transform: rotate(-3deg);
     /* animation: growSquirel 5s forwards; */
 
@@ -167,8 +167,8 @@ section#hero {
     position: fixed;
     z-index: 100;
     top: 0;
-    right: -100px;
-    animation: throwPineCone 5s forwards;
+    right: -150px;
+    /* animation: throwPineCone 5s forwards; */
 
     > img {
       width: 100%;
@@ -192,17 +192,23 @@ section#hero {
   }
 }
 
-@keyframes growSquirel {
+@keyframes growSquirrel {
   0% {
     transform: scale(1) rotate(-3deg);
-    top: -100px;
-    right: -100px;
+    top: 0px;
+    right: -200px;
+  }
+
+  50% {
+    transform: scale(1) rotate(-3deg);
+    top: 0px;
+    right: -20px;
   }
 
   100% {
     transform: scale(1) rotate(-3deg);
-    top: 30px;
-    right: 0;
+    top: 0px;
+    right: -200px;
   }
 }
 
@@ -224,10 +230,6 @@ section#hero {
     top: 500px;
     right: 600px;
   }
-}
-
-#sound-prompt {
-  z-index: 200;
 }
 
 /* footer ----------------------- */
