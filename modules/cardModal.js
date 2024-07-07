@@ -49,6 +49,7 @@ export default class CardModal {
       closeButton.classList.add('closeButton');
       closeButton.addEventListener('click', () => {
          cardModal.close();
+         cardModal.remove()
       });
 
       infoField.append(treeName, treeDescription, treeSpecies, treeAge, treeHeight, treeDiameter, treeSpread)
